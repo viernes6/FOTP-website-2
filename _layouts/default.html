@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="{{ "/css/ie.css" | prepend: site.baseurl }}">
+  <![endif]-->
+  <body>
+
+    {% include header.html %}
+
+    <main id="main" class="content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

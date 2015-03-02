@@ -1,0 +1,27 @@
+---
+layout: home
+title: Home
+permalink: /
+---
+
+<section class="site-heading">
+    <h1 class="site-title"><span class="site-fop">Friends of the Park</span><br/><span class="site-city">Windcrest, Texas</span></h1>
+</section>
+
+<section class="featured">
+
+<ul class="project-list">
+  {% for post in site.posts limit:4 %}
+  <li>
+    <a href="{{ post.url }}">
+      <article class="project-tile">
+        <img src="{{ post.image }}" alt="">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.excerpt }}</p>
+      </article>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+</section>

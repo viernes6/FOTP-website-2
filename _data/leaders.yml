@@ -1,0 +1,66 @@
+- name: Scott Gorton
+  
+image: /images/scott gorton.jpg
+  
+role: President
+  
+description: Looking forward to providing leadership to our organization in the spirit of Ted Hanes and Don Myles.
+
+
+
+- name: Jack Leonhardt
+  
+image:
+  
+role: Secretary
+  
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos itaque voluptas ab. Nemo eaque est vel magnam quisquam, voluptate, ducimus tenetur.
+
+
+
+- name: Evelyn Eanes
+  
+image:
+  
+role: Vice President
+  
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos itaque voluptas ab. Nemo eaque est vel magnam quisquam, voluptate, ducimus tenetur.
+
+
+
+- name: Don Myles
+  
+image: /images/Don Myles.JPG
+  
+role: Treasurer
+  description: Working to keep Windcrest's Parks and Green Spaces beautiful.
+
+
+
+- name: JoAnn Hilliard
+  
+image: 
+  
+role: Director
+  
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos itaque voluptas ab. Nemo eaque est vel magnam quisquam, voluptate, ducimus tenetur.
+
+
+
+- name: Gary Fisher
+  
+image: 
+  
+role: Director
+  
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos itaque voluptas ab. Nemo eaque est vel magnam quisquam, voluptate, ducimus tenetur.
+
+
+
+- name: Peg Gorton
+  
+image: 
+  
+role: Director
+  
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos itaque voluptas ab. Nemo eaque est vel magnam quisquam, voluptate, ducimus tenetur.

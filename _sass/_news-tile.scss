@@ -1,0 +1,53 @@
+.news-tile {
+
+    background-color: rgb(25, 197, 135);
+    color: white;
+    display: inline-block;
+    height: 180px;
+    padding: 16px 0 0 196px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+
+    h1 {
+        @include rem(font-size, 3.1875);
+        @include rem(margin-top, 0);
+        @include rem(margin-bottom, 1);
+    }
+
+    time {
+        @include rem(margin-bottom, 0.5);
+    }
+
+    img {
+        background-image: url('/images/main-section.jpg');
+        box-sizing: border-box;
+        height: 180px;
+        left:0;
+        position: absolute;
+        top:0;
+        width: 180px;
+    }
+
+    &:after {
+        @include rem(font-size, 2);
+        bottom: 10px;
+        content:"\2026";
+        display:inline-block;
+        position: absolute;
+        right: 10px;
+    }
+
+    p {
+        @include rem(font-size, 1);
+        @include rem(line-height, 1);
+        @include rem(margin-bottom, 1);
+        font-family: $base-font-family;
+    }
+}
+
+.news-list {
+    li {
+        @include rem(margin-bottom, 2);
+    }
+}

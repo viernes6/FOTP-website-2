@@ -1,0 +1,82 @@
+.tile {
+
+    background-color: rgb(25, 197, 135);
+    color: white;
+    display: inline-block;
+    padding: 0 16px 16px;
+    position: relative;
+    text-decoration: none;
+    height: 300px;
+    width: 300px;
+
+    h1 {
+        font-size: 3.1875rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    time {
+        margin-bottom: 0.5rem;
+    }
+
+    img {
+        box-sizing: border-box;
+        height: 100%;
+        left:0;
+        position: absolute;
+        top:0;
+        width: 100%;
+        @include transition(all, 0.25s, ease);
+    }
+
+    p {
+        font-family: $base-font-family;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &:hover img,
+    &:focus img {
+        @include transition(all, 0.25s, ease);
+        opacity: 0;
+    }
+}
+
+.project-list {
+    @include flexbox;
+    @include flex-flow(row wrap);
+    @include justify-content(space-around);
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+    min-height: 300px;
+
+    li {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-tile {
+        width: 100%;
+    }
+}
+
+.portrait {
+    background-image: url('http://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png');
+    background-size: cover;
+}
+
+@media screen and (max-width: 960px) {
+    .tile img,
+    .project-tile img {
+        opacity: 0.1;
+    }
+
+    .tile, .project-tile {
+        &:hover img,
+        &:focus img {
+            opacity: 1;
+        }
+    }
+}

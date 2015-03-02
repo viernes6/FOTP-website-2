@@ -1,0 +1,97 @@
+nav {
+    @include rem(height, 3.5);
+    background-color: black;
+    width: 100%;
+}
+
+#navigation-toggle {
+    @include rem(width, 3);
+    background-color: green;
+    border: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.navigation-links.closed {
+    max-height:0;
+}
+
+.navigation-links {
+    max-height: 500px; /* approximate max height */
+    overflow-y: hidden;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.main-navigation-link {
+    @include rem(font-size, 1.75);
+    @include rem(height, 3.5);
+    @include rem(letter-spacing, 0.2);
+    @include rem(line-height, 3.5);
+    @include rem(padding, 0, 0.5);
+    color: rgb(25, 197, 135);
+    display: inline-block;
+    text-decoration: none;
+
+    &.active {
+        background-color: rgb(25, 197, 135);
+        color: black;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 961px) {
+
+    nav {
+        @include rem(height, 3.5);
+        background-color: black;
+        width: 100%;
+    }
+
+    .navigation-wrapper {
+        margin: 0 auto;
+        width: 960px;
+    }
+
+    .main-navigation-link {
+        @include rem(font-size, 1.75);
+        @include rem(height, 3.5);
+        @include rem(letter-spacing, 0.2);
+        @include rem(line-height, 3.5);
+        @include rem(padding, 0, .5);
+        color: rgb(25, 197, 135);
+        text-decoration: none;
+
+        &.active {
+            background-color: rgb(25, 197, 135);
+            color: black;
+            display: inline-block;
+        }
+
+        &:first-of-type {
+            border-left: 1px solid gray;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    nav {
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+
+    .navigation-wrapper {
+        @include flexbox;
+        @include flex-flow(column);
+        @include justify-content(space-between);
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+}
